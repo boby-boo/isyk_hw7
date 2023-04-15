@@ -24,19 +24,14 @@ class SubmitForm extends React.Component {
 
     handleSubmit(e) {
         e.preventDefault();
-        // const value = prompt('Enter task');
-        if(!this.state.value) return;
+        const value = prompt('Enter task');
 
-        // if(!value) return;
-        // this.setState({
-        //     value: value
-        // })
-        // const item = {
-        //     value,
-        //     id: v4()
-        // }
+        if(!value) return;
+        this.setState({
+            value: value
+        })
         const item = {
-            ...this.state,
+            value,
             id: v4()
         }
 
@@ -49,7 +44,6 @@ class SubmitForm extends React.Component {
     render() {
         return (
             <form onSubmit={this.handleSubmit}>
-                <input value={this.state.value} onChange={this.handleChange} />
                 <div className={styles.inner}>
                         Add new task
                     <Button iconType={iconTypes.plus} color='teal' size='40' /> 
