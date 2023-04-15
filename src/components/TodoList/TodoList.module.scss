@@ -1,0 +1,25 @@
+@import '../../global.scss';
+
+.list {
+    margin: 0 auto;
+    max-width: 500px
+}
+
+.buttons {
+    @extend %tplFlex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.item {
+    @extend %tplFlex;
+    margin-bottom: 20px;
+    padding: 10px;
+    border-radius: 5px;
+    border-bottom: 1px solid $mainColor;
+    @include tplTranslate(background-color);
+
+    &:hover {
+        background-color: transparentize($mainColor, 0.9);
+    }
+}

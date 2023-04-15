@@ -1,0 +1,20 @@
+@import '../../global.scss';
+
+.inner {
+    @extend %tplFlex;
+    margin: 0 auto 20px;
+    max-width: 200px;
+    padding: 10px;
+    text-transform: uppercase;
+    border: 1px solid $mainColor;
+    @include tplTranslate(background-color);
+
+    &:hover {
+        box-shadow: -1px 1px 20px 0px $mainColor;
+        background-color: transparentize($mainColor, 0.7);
+    }
+
+    &:active {
+        background-color: transparentize($mainColor, 0.4);
+    }
+}

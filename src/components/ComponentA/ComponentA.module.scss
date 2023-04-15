@@ -1,0 +1,9 @@
+@import '../../global.scss';
+
+.buttons {
+    margin: 20px auto;
+    @extend %tplFlex;
+    justify-content: center;
+    gap: 20px;
+    max-width: 200px;
+}

@@ -1,0 +1,11 @@
+@import '../../global.scss';
+
+.app {
+    margin: 0 auto;
+    text-align: center;
+}
+
+.completed {
+    background-color: transparentize($mainColor, 0.5) !important;
+    text-decoration: line-through;
+}

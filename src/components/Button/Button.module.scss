@@ -1,0 +1,15 @@
+@import '../../global.scss';
+
+.icon {
+    width: 40px;
+    height: 40px;
+    background: none;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    @include tplTranslate(opacity);
+
+    &:hover {
+        opacity: 0.8;
+    }
+}
