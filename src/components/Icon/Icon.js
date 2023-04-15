@@ -1,8 +1,8 @@
 import React from 'react';
-import { iconsDefs } from '../assets/icons';
+import { icons } from '../icons/icons';
 
 export const Icon = props => {
-  const icon = iconsDefs[props.type];
+  const icon = icons[props.type];
   if(!icon){ return null };
 
   const { className, color, size, ...rest } = props;

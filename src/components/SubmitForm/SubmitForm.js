@@ -3,7 +3,7 @@ import styles from './SubmitForm.module.scss';
 import Button from '../Button/Button';
 import { v4 } from 'uuid' 
 
-import { iconTypes } from '../constants/icons';
+import { iconTypes } from '../iconTypes/iconTypes';
 
 class SubmitForm extends React.Component {
     constructor(props) {

@@ -1,7 +1,7 @@
 import React from "react";
 import styles from '../Button/Button.module.scss';
 
-import { Icon } from '../Icon';
+import { Icon } from '../Icon/Icon';
 
 class Button extends React.Component {
     constructor(props) {

@@ -1,6 +1,6 @@
 import React from 'react';
 
-export const iconsDefs = {
+export const icons = {
   plus: {
     className: 'icon icon-plus',
     viewBox: '0 0 32 32',

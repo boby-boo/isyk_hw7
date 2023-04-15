@@ -1,6 +1,6 @@
 import React from 'react';
 import Button from '../Button/Button';
-import { iconTypes } from '../constants/icons';
+import { iconTypes } from '../iconTypes/iconTypes';
 
 import styles from './TodoList.module.scss';
 
@@ -28,7 +28,7 @@ class TodoList extends React.Component {
                                 />
                                 <Button 
                                     iconType={isDone ? iconTypes.check : iconTypes.uncheck} 
-                                    color='yellow' 
+                                    color='#2aff1e' 
                                     size='20' 
                                     onClick={this.props.completedItem.bind(this, id)} 
                                 />
