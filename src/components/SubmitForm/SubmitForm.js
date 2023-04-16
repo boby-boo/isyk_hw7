@@ -1,7 +1,7 @@
 import React from 'react';
 import styles from './SubmitForm.module.scss';
 import Button from '../Button/Button';
-import { v4 } from 'uuid' 
+import { v4 } from 'uuid';
 
 import { iconTypes } from '../iconTypes/iconTypes';
 
@@ -26,7 +26,7 @@ class SubmitForm extends React.Component {
         e.preventDefault();
         const value = prompt('Enter task');
 
-        if(!value) return;
+        if (!value) return;
         this.setState({
             value: value
         })
@@ -45,8 +45,7 @@ class SubmitForm extends React.Component {
         return (
             <form onSubmit={this.handleSubmit}>
                 <div className={styles.inner}>
-                        Add new task
-                    <Button iconType={iconTypes.plus} color='teal' size='40' /> 
+                    <Button text='Add new task' iconType={iconTypes.plus} color='teal' size='40' /> 
                 </div>
             </form>
         )

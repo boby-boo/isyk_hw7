@@ -6,14 +6,14 @@ import { Icon } from '../Icon/Icon';
 class Button extends React.Component {
     constructor(props) {
         super(props);
-
     }
+
     render() {
-        const {iconType, color, size} = this.props;
+        const {iconType, color, size, text} = this.props;
 
         return (
             <button className={styles.icon}>
-                {this.props.children}
+                {text}
                 <Icon 
                     type={iconType} 
                     color={color} 
