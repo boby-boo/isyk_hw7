@@ -1,5 +1,5 @@
 import React from 'react';
-import { icons } from '../icons/icons';
+import { icons } from '../assets/icons';
 
 export const Icon = props => {
   const icon = icons[props.type];
