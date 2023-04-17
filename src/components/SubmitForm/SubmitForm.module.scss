@@ -3,7 +3,7 @@
 .inner {
     @extend %tplFlex;
     margin: 0 auto 20px;
-    max-width: 200px;
+    max-width: 250px;
     text-transform: uppercase;
     border: 1px solid $mainColor;
     @include tplTranslate(background-color);
